@@ -1,0 +1,96 @@
+.Abilities {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: auto;
+  // background-color: var(--gray-color);
+
+  background-image: url("../../../assets/Yone-blur.jpg") !important;
+  // background-image: url("../../../assets/");
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.Spellls {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+
+  .Passive {
+    display: flex;
+    // background-color: red;
+    width: 100%;
+    margin: 1rem;
+
+    img {
+      border: 2px solid gray;
+    }
+
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: space-between;
+      //   background-color: green;
+      margin: 0 2.1rem;
+    }
+  }
+
+  .Spelll {
+    display: flex;
+    // background-color: red;
+    margin: 1rem;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+
+    img {
+      border: 2px solid gray;
+    }
+
+    .Spell-abilities {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      align-items: left;
+
+      .bold-text {
+        color: var(--primary-color);
+      }
+
+      .spell-contentt {
+        display: flex;
+      }
+
+      .Spell-ability {
+        margin: 0.2rem;
+        background-color: var(--gray-color);
+        padding: 0.5rem;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        // display: inline-block;
+        width: 31px;
+        height: 31px;
+        // background: #2c3d5d;
+        border: 2px solid gray;
+        position: relative;
+        cursor: pointer;
+        transition: 250ms;
+        color: var(--black-color);
+      }
+
+      .aktiv {
+        border: 2px solid var(--primary-color);
+        color: whitesmoke;
+        background-color: var(--black-color);
+      }
+    }
+  }
+}

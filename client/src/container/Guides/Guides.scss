@@ -1,0 +1,220 @@
+.app__guides {
+  flex: 1;
+  width: 85%;
+  flex-direction: column;
+  // background-color: red;
+}
+
+.Guides-con {
+  position: relative;
+  bottom: 100px;
+  // background-color: green;
+  width: 100%;
+}
+
+.Guides-h2 {
+  // background-color: green;
+  width: 100%;
+  position: relative;
+
+  h2 {
+    font-size: 32px;
+    color: var(--black-color);
+  }
+  span {
+    color: var(--primary-color);
+  }
+  p {
+    text-align: left;
+    font-size: 20px;
+    span {
+      text-decoration: underline;
+    }
+  }
+}
+
+.app__guide-filter {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 4rem 0 2rem;
+
+  .app__guide-filter-item {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-color);
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      color: #fff;
+    }
+
+    @media screen and(min-width:2000px) {
+      padding: 1rem 2rem;
+      border-radius: 0.85rem;
+    }
+  }
+
+  .item-active {
+    background-color: var(--secondary-color);
+    color: #fff;
+  }
+}
+
+.app__guide-portfolio {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+  .app__guide-item {
+    width: 600px;
+    height: 150px;
+    flex-direction: row;
+    margin: 2rem;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: var(--gray-color);
+    color: black;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &:hover {
+      box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and(min-width: 2000px) {
+      width: 470px;
+      padding: 1.25rem;
+      border-radius: 0.75rem;
+    }
+
+    @media screen and(max-width: 600px) {
+      width: 300px;
+      margin: 1rem;
+    }
+  }
+}
+
+.app__guide-img {
+  width: 150px;
+  height: 120px;
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+
+  @media screen and(min-width: 2000px) {
+    height: 350px;
+  }
+}
+
+.app__guide-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    margin: 1rem;
+    font-family: var(--font-base);
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 50%;
+      height: 50%;
+      color: var(--white-color);
+    }
+  }
+}
+
+.app__guide-content {
+  padding: 0.5rem;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+
+  h4 {
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+
+  .app__guide-tag {
+    position: absolute;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    // background-color: #090a20;
+    top: -25px;
+
+    img {
+      height: 25px;
+    }
+  }
+}
+
+.app__guide-input {
+  // padding: 4rem 0;
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem auto;
+  input {
+    width: 100%;
+    padding: 0.95rem;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--gray-color);
+    font-family: var(--font-base);
+    color: var(--secondary-color);
+    outline: none;
+  }
+  button {
+    padding: 0.95rem;
+    border: none;
+    border-radius: 7px;
+    color: #000;
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0.5rem;
+
+    &:hover {
+      background-color: var(--secondary-color);
+      color: white;
+    }
+
+    @media screen and(min-width:2000px) {
+      padding: 1rem 2rem;
+      border-radius: 0.85rem;
+    }
+  }
+}

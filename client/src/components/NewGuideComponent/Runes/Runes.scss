@@ -1,0 +1,121 @@
+.Runes {
+  display: flex;
+  flex-direction: column;
+
+  margin: 1rem auto;
+  width: 100%;
+  padding: 0.5rem;
+  background-color: var(--primary-color);
+  background-image: url("../../../assets/Yone-blur.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+}
+
+.Runes-content {
+  // background-color: var(--primary-color);
+  background-image: url("../../../assets/Yone-blur.jpg");
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+
+  .Runes-content-p {
+    width: 20%;
+    // background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    p {
+      color: var(--white-color);
+      // color: red;
+    }
+  }
+
+  .Runes-content-runes {
+    display: flex;
+    // background-color: blue;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      width: 60px;
+      height: 60px;
+    }
+  }
+
+  .Runes-content-btn {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 80%;
+    }
+  }
+}
+
+.Runes-map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin: 1rem;
+    cursor: pointer;
+  }
+}
+
+.Runes-runes {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  // background-color: red;
+  align-items: top;
+  justify-content: space-evenly;
+}
+
+.rune-set {
+  // background-color: var(--secondary-color);
+  // padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+
+  input {
+    padding: 0.8rem;
+    background-color: var(--gray-color);
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    width: 60%;
+    color: var(--primary-color);
+    margin: 1rem;
+  }
+
+  .btn {
+    width: 20%;
+    padding: 0.3rem !important;
+    // height: "" 40px;
+    text-align: center;
+  }
+}
+
+.Runes-btn {
+  background-color: var(--gray-color);
+  color: var(--primary-color);
+  padding: 0.8rem;
+
+  &:hover {
+    background-color: var(--black-color);
+    color: var(--white-color);
+  }
+}

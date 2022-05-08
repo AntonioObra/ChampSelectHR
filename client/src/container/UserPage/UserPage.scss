@@ -1,0 +1,223 @@
+.app__userpages {
+  flex: 1;
+  width: 100%;
+  flex-direction: column;
+  padding-top: 4rem;
+  color: whitesmoke;
+}
+
+.UserPage {
+  width: 70%;
+  min-height: 80vh;
+  // background-color: var(--gray-color);
+  font-size: 24px;
+  h2 {
+    color: var(--primary-color);
+    text-align: center;
+    // background-color: red;
+  }
+
+  span {
+    color: var(--black-color);
+  }
+}
+
+.UserPage-container {
+  // display: flex;
+  // justify-content: space-between;
+}
+
+.UserPage-user {
+  width: 100%;
+  // background-color: red;
+  // height: 100vh;
+
+  .UserPage-nav {
+    width: 80%;
+    display: flex;
+    // flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
+}
+
+.UserPage-content {
+  width: 100%;
+  // background-color: blue;
+  // height: 100vh;
+
+  .UserPage-motion {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto;
+  }
+}
+
+.PageGuides-item {
+  width: 600px;
+  height: 120px;
+  flex-direction: row;
+  margin: 0.5rem;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--gray-color);
+  color: black;
+  cursor: pointer;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.2);
+  }
+
+  @media screen and(min-width: 2000px) {
+    width: 800px;
+    padding: 1.25rem;
+    border-radius: 0.75rem;
+  }
+
+  @media screen and(max-width: 600px) {
+    width: 300px;
+    margin: 1rem;
+  }
+}
+
+.PageGuides-img {
+  width: 120px;
+  height: 100px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0.5rem;
+    object-fit: cover;
+  }
+
+  @media screen and(min-width: 2000px) {
+    height: 350px;
+  }
+}
+
+.PageGuides-hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0.5rem;
+  opacity: 0;
+  transition: all 0.3s ease;
+
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+
+    margin: 1rem;
+    font-family: var(--font-base);
+    font-weight: 800;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    svg {
+      width: 50%;
+      height: 50%;
+      color: var(--white-color);
+    }
+  }
+}
+
+.PageGuides-content {
+  padding: 0.5rem;
+  width: 100%;
+  position: relative;
+  flex-direction: column;
+
+  span {
+    color: var(--secondary-color);
+    font-weight: 800;
+  }
+  h4 {
+    margin-top: 1rem;
+    line-height: 1.5;
+  }
+}
+
+.UserPage-nav-btn {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  color: whitesmoke;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  font-size: 14px;
+
+  &:hover {
+    background-color: var(--black-color);
+    color: #fff;
+  }
+
+  @media screen and(min-width:2000px) {
+    padding: 1rem 2rem;
+    border-radius: 0.85rem;
+  }
+}
+
+.item-active {
+  background-color: var(--black-color);
+  color: #fff;
+}
+
+.UserPage-nav-btn-logout {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  color: whitesmoke;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  font-size: 14px;
+
+  &:hover {
+    background-color: var(--brown-color);
+    color: #fff;
+  }
+
+  @media screen and(min-width:2000px) {
+    padding: 1rem 2rem;
+    border-radius: 0.85rem;
+  }
+}
+
+.UserPage-nav-btn-delete {
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  background-color: var(--secondary-color);
+  color: whitesmoke;
+  font-weight: 800;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0.5rem;
+  font-size: 14px;
+
+  &:hover {
+    background-color: #d90429;
+    color: #fff;
+  }
+
+  @media screen and(min-width:2000px) {
+    padding: 1rem 2rem;
+    border-radius: 0.85rem;
+  }
+}

@@ -1,0 +1,129 @@
+.Spells {
+  width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 1rem auto;
+  background-color: var(--primary-color);
+  background-image: url("../../../assets/Yone-blur.jpg");
+  background-size: cover;
+  padding: 1rem;
+  flex-direction: column;
+  border-radius: 10px;
+
+  label {
+    margin: 1rem;
+  }
+}
+
+.Spell-content {
+  background-image: url("../../../assets/Yone-blur.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  width: 100%;
+  height: 100px;
+  margin: 1rem auto;
+  display: flex;
+  justify-content: space-between;
+
+  .Spell-content-p {
+    width: 20%;
+    // background-color: green;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Spell-content-Spell {
+    display: flex;
+    // background-color: blue;
+    width: 70%;
+    justify-content: space-evenly;
+    align-items: center;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .Spell-content-active {
+    opacity: 1;
+  }
+
+  .Spell-content-btn {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    button {
+      width: 80%;
+    }
+  }
+}
+
+.Spell-container {
+  width: 50%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.Spell {
+  //   margin: 1rem;
+  //   background-color: var(--secondary-color);
+  //   padding: 1rem;
+
+  border-radius: 100%;
+  border: 3px solid #111d34;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  box-sizing: border-box;
+  opacity: 0.5;
+  transition: 300ms;
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 7px;
+  margin-bottom: 7px;
+
+  img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.SpellActive {
+  opacity: 1;
+  border-color: #275495;
+}
+
+.Spells-set {
+  // background-color: var(--secondary-color);
+  // padding: 1rem;
+  margin: 1rem auto;
+  justify-content: space-between;
+  border-radius: 10px;
+  display: flex;
+  width: 80%;
+
+  input {
+    padding: 0.5rem;
+    background-color: var(--gray-color);
+    outline: none;
+    border: none;
+    height: 40px;
+    border-radius: 10px;
+    width: 60%;
+    color: var(--primary-color);
+    margin: 1rem;
+  }
+
+  .btn {
+    width: 20%;
+    padding: 0.5rem !important;
+    // height: 40px;
+    text-align: center;
+  }
+}

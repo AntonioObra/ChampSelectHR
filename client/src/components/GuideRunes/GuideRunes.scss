@@ -1,0 +1,92 @@
+.GuideRunes {
+  width: 55%;
+  // height: 550px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // margin: 0 auto;
+  background-color: var(--gray-color);
+  // border-radius: 10px;
+  h2 {
+    text-align: left;
+    font-size: 18px;
+    margin: 0 !important;
+  }
+}
+
+.GuideRunes-runes {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: var(--gray-color);
+  border-radius: 10px;
+  margin: 0 auto;
+  // height: 400px;
+
+  p {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0rem;
+  }
+
+  #guide-p {
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: 700;
+  }
+}
+
+.runeSet-nav {
+  display: flex;
+  margin: 1rem auto;
+  justify-content: space-between;
+  width: 95%;
+  align-items: center;
+
+  #guide-p {
+    color: var(--black-color);
+    font-size: 18px;
+    font-weight: 700;
+
+    span {
+      color: var(--primary-color);
+      font-weight: 500;
+    }
+  }
+
+  // background-color: green;
+
+  .runeSet-nav-sets {
+    display: flex;
+    // background-color: red;
+  }
+}
+
+.runeSet-n {
+  margin-right: 0.4rem;
+  background-color: var(--secondary-color);
+  padding: 0.5rem;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  width: 31px;
+  height: 31px;
+  border: 2px solid gray;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+  transition: 250ms;
+  color: #a6b4cc;
+
+  transition: all 0.3s ease;
+}
+
+.activeRuneSet-n {
+  border: 2px solid var(--primary-color);
+  color: whitesmoke;
+  background-color: var(--black-color);
+  transition: all 0.3s ease;
+}

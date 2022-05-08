@@ -1,0 +1,88 @@
+.GuideSpells {
+  width: 30%;
+  // background-color: green;
+  // height: 430px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  // margin: 2rem 0;
+
+  background-color: var(--gray-color);
+}
+
+.head-text {
+  text-align: left !important;
+
+  font-size: 18px !important;
+
+  margin: 0 !important;
+}
+
+.GuideSpells-spells {
+  width: 100%;
+
+  // margin: 1rem auto;
+  // background-color: blue;
+  // height: 87%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  h3 {
+    // padding: 0.5rem 0.2rem;
+    // text-align: center;
+    // color: var(--black-color);
+
+    // display: block;
+    color: var(--primary-color);
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 600;
+    // text-align: left;
+    // background: red;
+    // width: 70%;
+  }
+
+  .GuideSpells-spell {
+    // background-color: var(--black-color);
+    border-radius: 10px;
+    width: 100%;
+    margin: 1rem 0;
+    .spil {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: top;
+      margin: auto;
+      // background-color: green;
+    }
+    .spell-img {
+      display: inline-block;
+      vertical-align: top;
+      position: relative;
+      width: 75px;
+      margin-right: 25px;
+      margin-bottom: 20px;
+      text-align: center;
+      // background: red;
+
+      p {
+        padding: 0.5rem 0.2rem;
+        margin-top: 3px;
+        color: var(--primary-color);
+        font-size: 12px;
+        line-height: 12px;
+        display: block;
+        text-align: center;
+        word-break: break-word;
+      }
+      img {
+        width: 64px;
+        height: 64px;
+        border: 3px solid var(--black-color);
+        box-sizing: border-box;
+        border-radius: 100%;
+      }
+    }
+  }
+}

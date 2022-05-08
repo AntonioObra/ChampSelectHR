@@ -1,0 +1,36 @@
+.Spojnica {
+  height: 300px;
+  display: flex;
+  //   align-items: center;
+  justify-content: space-between;
+  background-color: var(--primary-color);
+  width: 100%;
+  img {
+    position: relative;
+    height: 450px;
+    // background-color: red;
+    bottom: 150px;
+
+    @media screen and(max-width:500px) {
+      // width: 100%;
+      height: 200px;
+      bottom: 100px;
+    }
+  }
+
+  @media screen and(max-width:500px) {
+    // width: 100%;
+    height: 100px;
+  }
+}
+
+.fullImage {
+  height: 1000px !important;
+  width: 100%;
+  // background-color: var(--primary-color);
+  img {
+    height: 2000px;
+    position: relative;
+    bottom: 150px;
+  }
+}

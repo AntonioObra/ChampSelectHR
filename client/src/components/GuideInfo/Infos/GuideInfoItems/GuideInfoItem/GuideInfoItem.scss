@@ -1,0 +1,43 @@
+.GuideInfoItem {
+  min-width: 30%;
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-color);
+  margin: 0.5rem;
+  border-radius: 10px;
+  h2 {
+    padding: 0.5rem;
+    color: white;
+    font-size: 18px;
+  }
+}
+
+.GuideInfoItem-content {
+  display: flex;
+  width: 100%;
+  padding: 0.5rem;
+  .GuideInfoItem-image {
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    img {
+      height: 80px;
+      width: 80px;
+      border-radius: 10px;
+      border: 1px solid white;
+      margin: 0 0.2rem;
+    }
+  }
+  .GuideInfoItem-text {
+    display: flex;
+    flex-direction: column;
+    p {
+      margin: 0.5rem;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+  }
+}

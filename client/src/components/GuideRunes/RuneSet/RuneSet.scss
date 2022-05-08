@@ -1,0 +1,92 @@
+.RuneSet {
+  color: var(--black-color);
+
+  // background-color: var(--primary-color);
+  display: flex;
+  margin: 0 auto;
+  // border-radius: 10px;
+  // justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.RuneSet-head {
+  padding: 0 1rem;
+  p {
+    padding: 0rem 0.2rem;
+    text-align: center;
+    color: var(--black-color);
+  }
+  img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+.RuneSet-body {
+  display: flex;
+  // background-color: var(--secondary-color);
+  width: 70%;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.RuneSet-item {
+  // padding: 0 0.6rem;
+  // background-color: green;
+  margin: 1rem 0.8rem;
+  width: 100px;
+  height: 100px;
+
+  p {
+    padding: 0rem 0.2rem;
+    margin-top: 3px;
+    color: var(--primary-color);
+    font-size: 12px;
+    line-height: 12px;
+    display: block;
+    text-align: left !important;
+    word-break: break-word;
+  }
+  img {
+    margin-top: 1.2rem;
+    height: 50px;
+    // width: 50px;
+  }
+}
+
+.znj {
+  // padding: 0 1rem;
+  // margin: 0 2 rem;
+  width: 20%;
+  // background-color: green;
+  // position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    margin-top: 3px;
+    color: var(--black-color);
+    font-size: 14px;
+    line-height: 12px;
+    // display: block;
+    text-align: left !important;
+    // background-color: var(--primary-color);
+    word-break: break-word;
+    // letter-break: break-all;
+  }
+}
+
+.SecondRune-shards {
+  display: flex;
+  // background: red;
+  justify-content: center;
+  align-items: center;
+  margin: 0rem 0;
+  // background-color: red;
+  height: 100px;
+  z-index: 0;
+}

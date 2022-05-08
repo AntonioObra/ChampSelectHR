@@ -1,0 +1,44 @@
+.Synergies {
+  background-color: var(--primary-color);
+  background-image: url("../../../assets/Yone-blur.jpg");
+  background-size: cover;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.syn-champions {
+  width: 80% !important;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+  h3 {
+    color: var(--white-color);
+    margin: 1rem 0;
+    text-align: left;
+    width: 100%;
+
+    span {
+      color: var(--black-color);
+    }
+    // background-color: red;
+  }
+
+  input {
+    width: 70%;
+    padding: 0.95rem;
+    border: none;
+    border-radius: 7px;
+    background-color: var(--gray-color);
+    font-family: var(--font-base);
+    color: var(--primary-color);
+    outline: none;
+  }
+
+  p {
+    // background-color: green;
+    color: var(--primary-color);
+    margin: 0.3rem 0;
+  }
+}

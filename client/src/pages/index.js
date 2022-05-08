@@ -1,0 +1,9 @@
+export { default as Home } from "./Home/Home";
+export { default as Champions } from "./Champions/Champions";
+export { default as SingleChampion } from "./SingleChampion/SingleChampion";
+export { default as Guides } from "./Guides/Guides";
+export { default as NewGuide } from "./NewGuide/NewGuide";
+export { default as Auth } from "./Auth/Auth";
+export { default as SingleGuide } from "./SingleGuide/SingleGuide";
+export { default as User } from "./User/User";
+export { default as EditGuide } from "./EditGuide/EditGuide";

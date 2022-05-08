@@ -1,0 +1,193 @@
+.app__aguides {
+  // background-color: green;
+  flex: 1;
+  flex-direction: column;
+  width: 100%;
+}
+
+.GuideAbout {
+  // background-color: var(--primary-color);
+  border-radius: 10px;
+  margin: 2rem auto;
+  // width: 1200px;
+  width: 70%;
+  // background-color: var(--primary-color);
+
+  @media screen and (max-width: 1300px) {
+    width: 100%;
+  }
+}
+
+.GuideAbout-headertext {
+  display: flex;
+  flex-direction: column;
+  h2 {
+    width: 100%;
+    text-align: center;
+    font-size: 42px;
+    color: var(--black-color);
+  }
+  span {
+    color: var(--primary-color);
+  }
+  p {
+    text-align: center;
+
+    span {
+      color: var(--black-color);
+      font-weight: 800;
+    }
+  }
+}
+
+.d {
+  width: 90%;
+  margin: 2rem auto;
+  background-color: var(--gray-color);
+  // min-height: 200px;
+
+  h2 {
+    color: var(--black-color);
+    text-align: center;
+    font-size: 28px;
+    // margin: 2rem;
+    padding: 1rem;
+  }
+
+  .desc {
+    width: 80%;
+    margin: auto;
+    // border-radius: 10px;
+
+    p {
+      padding: 1rem 1rem;
+
+      margin: 1rem;
+      color: var(--primary-color);
+      font-size: 16px;
+      line-height: 20px;
+      // display: block;
+      text-align: center;
+      word-break: break-word;
+    }
+  }
+}
+
+.star {
+  width: 100%;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  // top: 35px;
+  // right: 10px;
+  padding: 0.5rem;
+
+  span {
+    cursor: pointer;
+  }
+}
+.star-div {
+  margin: 0 auto;
+  width: 100%;
+  // background-color: red;
+  display: flex;
+  // flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.runes-spells {
+  // background-color: red;
+  width: 70%;
+  // margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.GuideAbout-content {
+  // background-color: red;
+  width: 100%;
+}
+
+.GuideAbout-header {
+  margin: 1rem auto;
+  width: 90%;
+  .GuideAbout-header-img {
+    display: flex;
+
+    // background-color: red;
+    img {
+      width: 100%;
+
+      border: 5px solid var(--gray-color);
+      // object-fit: contain;
+      // height: 550px;
+    }
+  }
+
+  // display: flex;
+  // background-color: red;
+  align-items: center;
+  justify-content: space-between;
+
+  .GuideAbout-header-runes-spells {
+    margin: 2rem 0;
+    // background-color: blue;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-between;
+    height: 400px;
+
+    @media screen and(max-width:1300px) {
+      flex-direction: column;
+    }
+  }
+}
+
+.GuideAbout-header-spells {
+  margin: 2rem auto;
+  // background-color: red;
+  width: 90%;
+  display: flex;
+  align-items: top;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.GuideAbout-header-abilities {
+  display: flex;
+  align-items: top;
+  justify-content: space-between;
+  // background-color: red;
+  margin: 2rem auto;
+  width: 90%;
+
+  .GuideAbout-header-ab-img {
+    background-color: red;
+    max-width: 22%;
+
+    img {
+      border: 5px solid var(--gray-color);
+
+      // border-radius: 10px;
+      width: 100%;
+      object-fit: fill;
+
+      height: 100%;
+    }
+
+    @media screen and(max-width:1900px) {
+      img {
+        width: 0;
+        border: 0;
+      }
+    }
+  }
+
+  @media screen and(max-width:1920px) {
+    width: 100%;
+  }
+}
