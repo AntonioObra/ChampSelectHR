@@ -17,22 +17,10 @@ const dbUrl = process.env.DB_URL;
 const app = express();
 
 //povezivanje na bazu
-//"mongodb://localhost:27017/champSelectHR"
-
-// `mongodb://ObraIsus:${encodeURIComponent(
-//   "gigachadjan123@"
-// )}@144.91.84.95:27017/ChampSelectDB?authSource=admin&w=majority&readPreference=primary&retryWrites=true&directConnection=true&ssl=false
-// `,
-mongoose.connect(
-  `mongodb://ObraIsus:${encodeURIComponent(
-    "gigachadjan123@"
-  )}@localhost:27017/ChampSelectDB?authSource=admin&w=majority&readPreference=primary&retryWrites=true&directConnection=true&ssl=false
-  `,
-  {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  }
-);
+mongoose.connect(dbUrl, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
 //pregledava jeli povezana baza
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
