@@ -1,8 +1,8 @@
 import axios from "axios";
 
-//https://apichampselect.obradovic.dev
+const apiURL = process.env.REACT_APP_API_URL;
 
-const API = axios.create({ baseURL: "https://apichampselect.obradovic.dev" });
+const API = axios.create({ baseURL: apiURL });
 
 //API CALLS
 //champions

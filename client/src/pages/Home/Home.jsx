@@ -12,6 +12,7 @@ const Home = () => {
       <Navbar />
       <Header />
       {/* <Blogs /> */}
+
       <Champions />
       <Spojnica image={images.yasuo} red={1} />
       <Guides />
