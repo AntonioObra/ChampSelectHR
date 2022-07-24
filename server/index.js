@@ -3,25 +3,25 @@ import mongoose from "mongoose";
 import cors from "cors";
 import bodyParser from "body-parser";
 import User from "./models/users.js";
-//routes import
+
 import championRoutes from "./routes/champions.js";
 import itemRoutes from "./routes/items.js";
 import guideRoutes from "./routes/guides.js";
 import userRoutes from "./routes/user.js";
 import commentRoutes from "./routes/comments.js";
 import dotenv from "dotenv";
+
 dotenv.config();
 
 const dbUrl = process.env.DB_URL;
 
 const app = express();
 
-//povezivanje na bazu
+//database connection check
 mongoose.connect(dbUrl, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
-//pregledava jeli povezana baza
 const db = mongoose.connection;
 db.on("error", console.error.bind(console, "connection error:"));
 db.once("open", () => {
@@ -44,7 +44,7 @@ const sessionConfig = {
   },
 };
 
-//routes
+//all api routes
 app.use("/champions", championRoutes);
 app.use("/items", itemRoutes);
 app.use("/guides", guideRoutes);
