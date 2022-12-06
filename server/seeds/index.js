@@ -7,12 +7,15 @@ import Item from "../models/items.js";
 import Build from "../models/builds.js";
 import champions from "./championFullseeds/championFull.js";
 
+import dotenv from "dotenv";
+
+dotenv.config();
+
+const dbUrl = process.env.DB_URL;
+
 //povezivanje na bazu
 mongoose.connect(
-  `mongodb://ObraIsus:${encodeURIComponent(
-    "gigachadjan123@"
-  )}@144.91.84.95:27017/ChampSelectDB?authSource=admin&w=majority&readPreference=primary&retryWrites=true&directConnection=true&ssl=false
-`,
+  "mongodb+srv://antonioobra:pTljapr2xnpMfemN@cluster0.oaaqjsd.mongodb.net/?retryWrites=true&w=majority",
   {
     useNewUrlParser: true,
     useUnifiedTopology: true,
